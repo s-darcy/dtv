@@ -1,0 +1,14 @@
+.hero {
+
+    background-size: 100%;
+    background-image: url( '/img/wonder-woman.jpg' );
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-White;
+
+    &__heading {
+        color: $color-White;
+        margin-top: 57px;
+    }
+
+}

@@ -1,0 +1,37 @@
+.header {
+
+    background-color: $color-Black;
+    color: $color-White;
+    height: 80px;
+
+    &__direct-tv-logo {
+        margin-top: 27px;
+    }
+
+    &__nav-items {
+        color: $color-White;
+        margin-top: 31px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+    }
+
+    &__phone-section {
+        display: inline-block;
+        margin-top: 21px;
+    }
+
+    &__call-to-action {
+        font-size: 12px;
+        display: inline-block;
+        line-height: 17px;
+        margin-right: 5px;
+    }
+
+    &__phone-number {
+        color: $color-Cerulean;
+        display: inline-block;
+        font-size: 24px;
+    }
+
+}//header
