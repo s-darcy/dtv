@@ -1,15 +1,27 @@
 .cards {
 
     &__heading {
-
+        margin-top: 23px;
+        margin-bottom: 1px;
+        font-size: 17px;
+        color: $color-Black;
+        line-height: 24px;
+        font-family: 'OpenSans-Regular';
     }
 
     &__price {
-        
+        font-size: 32px;
+        color: $color-Woodsmoke;
+        line-height: 43px;
+        font-family: 'OpenSans-Regular';
     }
 
     &__fees-and-taxes {
-        
+        font-size: 6px;
+        color: $color-Mine-Shaft;
+        line-height: 8px;
+        font-family: 'OpenSans-Regular';
+        margin-top: 8px;
     }
 
     &__t-and-cs {
