@@ -6,10 +6,10 @@ button {
     font-size: 18px;
     background-color: $color-Chilean-Fire;
     border-radius: 25px;
-    padding-top: 4px;
+    border:  0px $color-Chilean-Fire;
 }
 
 button > a {
     color: $color-White;
-    
+    font-family: 'OpenSans-Regular';
 }

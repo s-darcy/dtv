@@ -1,5 +1,45 @@
 .tv-includes {
 
+    &__tv-icon,
+    &__tv-and-remote-icon,
+    &__dvr-icon  {
+        margin-top: 70px;
+        margin-bottom: 25px;
+    }
 
+    &__tv-icon {
+        width: 92px;
+        height: 78px;
+    }
+
+    &__tv-and-remote-icon {
+        width: 111px;
+        height: 98px; 
+    }
+
+    &__dvr-icon {
+       width: 106px;
+       height: 86px; 
+    }
+
+    &__title {
+        color: $color-Cerulean;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: 'OpenSans-Regular';
+        margin-bottom: 14px;
+    }
     
-}
+    &__details {
+        margin-bottom: 9px;
+        font-size: 18px;
+        font-family: 'OpenSans-Light';
+    }
+
+    &__premium-channels--package {
+        font-size: 8px;
+        color: $color-Scorpion;
+        margin-bottom: 47px;
+    }
+
+}//tv-includes

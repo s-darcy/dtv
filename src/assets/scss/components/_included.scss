@@ -1,0 +1,39 @@
+.included {
+
+    &__heading {
+        font-family: 'OpenSans-Light';
+        font-size: 45px;
+        line-height: 45px;
+        color: $color-Black;
+        margin-top: 81px;
+        margin-bottom: 50px;
+    }
+
+    & hr {
+        color: $color-Alto;
+        margin-top: 14px;
+    }
+
+    &__announcement {
+        color: $color-Cerulean;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    &__check {
+
+    }
+    
+    &__genie-upgrade {
+        
+    }
+
+    &__fees {
+        
+    }
+
+    &__installation {
+        
+    }
+
+}//included

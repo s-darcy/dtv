@@ -1,5 +1,36 @@
 .shop {
 
+    background-color: $color-Endeavour;
 
+    &__pitch {
+        font-size: 34px;
+        color: $color-White;
+        line-height: 42px;
+        font-family: 'OpenSans-Light';
+        margin-top: 53px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        background-color: $color-White;
+        width: 220px;
+        height: 51px;
+        margin-top: 51px;
+        margin-bottom: 43px;
+    }
+
+    &__shop-bundles {
+        color: $color-Allports;
+        padding-top: 10px;
+    }
+
+    &__button:hover {
+        background-color: $color-Allports;
+        border: 1px solid $color-White;
+    }
+
+    &__shop-bundles:hover {
+        color: $color-White;
+    }
     
-}
+}//shop

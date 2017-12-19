@@ -5,10 +5,29 @@
     background-repeat: no-repeat;
     background-position: center;
     color: $color-White;
+    height: 390px;
 
     &__heading {
         color: $color-White;
         margin-top: 57px;
+        margin-bottom: 28px;
+        font-family: 'OpenSans-Light';
+        font-size: 45px;
+        line-height: 45px;
     }
 
-}
+    &__description {
+        font-family: 'OpenSans-Regular';
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 44px;
+    }
+
+    &__movie-subtext {
+        margin-top: 40px; 
+        font-size: 11px;
+        line-height: 15px;
+        font-family: 'OpenSans-Regular';
+    }
+
+}//hero

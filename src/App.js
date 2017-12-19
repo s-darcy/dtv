@@ -43,7 +43,7 @@ class App extends Component {
               <div className="columns large-6">
                 <h2 className="hero__heading">All Included DIRECTV Packages</h2>
                 <p className="hero__description">Enjoy TV without the hidden fees. Find the DIRECTV package that’s right for you.</p>
-                <button className="hero__button"><a className="hero__button" href="#">View packages</a></button>
+                <button className="hero__button"><a className="hero__button--text" href="#">View packages</a></button>
               </div>  
             </div>
             <div className="row">
@@ -53,31 +53,33 @@ class App extends Component {
             </div>    
           </section> 
 
-          <section className="tv-inlcudes text-center">
+          <section className="tv-includes  text-center">
             <div className="row">
               <div className="columns large-4">
                 <img className="tv-includes__tv-icon" alt="TV icon" src="/img/TV-icon.svg" />
-                <p className="tv-includes_title">PREMIUM CHANNELS</p>
-                <p className="tv-includes_details">Includes HBO®, STARZ®, SHOWTIME®, and CINEMAX® for the first 3 months at no extra charge.</p>
+                <p className="tv-includes__title">PREMIUM CHANNELS</p>
+                <p className="tv-includes__details">Includes HBO®, STARZ®, SHOWTIME®, and CINEMAX® for the first 3 months at no extra charge.</p>
                 <p className="tv-includes__premium-channels--package">With SELECT through ULTIMATE Pkgs. After 3 mos., services continue at then prevailing rate  (currently $53.99/mo.) unless you call to change or cancel. Req’s you to select offer.</p>
               </div>
               <div className="columns large-4">
                 <img className="tv-includes__tv-and-remote-icon" alt="TV and remote icon" src="/img/TV-and-remote.svg"/>
-                <p className="tv-includes_title">NEVER MISS A SHOW</p>
-                <p className="tv-includes_details">Enjoy Genie. Our most advanced DVR ever.</p>
+                <p className="tv-includes__title">NEVER MISS A SHOW</p>
+                <p className="tv-includes__details">Enjoy Genie. Our most advanced DVR ever.</p>
               </div> 
               <div className="columns large-4">
                 <img className="tv-includes__dvr-icon" alt="Whole home DVR icon" src="/img/DVR-4.svg" />
-                <p className="tv-includes_title">MONTHLY EQUIPMENT FEES FOR UP TO 4 ROOMS INCLUDED</p>
-                <p className="tv-includes_details">With DIRECTV there’s no equipment to buy.</p>
+                <p className="tv-includes__title">MONTHLY EQUIPMENT FEES FOR UP TO 4 ROOMS INCLUDED</p>
+                <p className="tv-includes__details">With DIRECTV there’s no equipment to buy.</p>
               </div>   
             </div>  
           </section> 
 
           <section className="shop">
             <div className="row">
-              <div className="columns large-12">
+              <div className="columns large-9">
                 <h2 className="shop__pitch">Get your entertainment on more devices.</h2>
+              </div>
+              <div className="columns large-3">
                 <button className="shop__button"><a className="shop__shop-bundles" href="#">Shop bundles</a></button>
               </div>
             </div>  
@@ -88,21 +90,27 @@ class App extends Component {
               <div className="columns large-12 text-center">
                 <h2 className="included__heading">All Included DIRECTV Packages</h2>
               </div> 
-              <div className="columns large-12 text-center">
+              <div className="columns large-4 text-center">
+                <hr />
+              </div> 
+              <div className="columns large-4 text-center"> 
                 <h3 className="included__announcement">ALL DIRECTV PACKAGES INCLUDE:</h3>
               </div>
+              <div className="columns large-4 text-center">
+                <hr />
+              </div> 
             </div>  
             <div className="row">
               <div className="columns large-3 large-offset-1">
-                <i className="fa fa-check" aria-hidden="true"></i>
+                <i className="included__check  fa fa-check" aria-hidden="true"></i>
                 <p className="included__genie-upgrade">Genie® HD DVR Upgrade</p>
               </div>
               <div className="columns large-3 end">
-                <i className="fa fa-check" aria-hidden="true"></i>
+                <i className="included__check  fa fa-check" aria-hidden="true"></i>
                 <p className="included__fees">Monthly equipment fees for up to 4 TVs</p>
               </div>
               <div className="columns large-3 end">
-                <i className="fa fa-check" aria-hidden="true"></i>
+                <i className="included__check  fa fa-check" aria-hidden="true"></i>
                 <p className="included__isntallation">Standard Professional Installation</p>
               </div>       
             </div> 
