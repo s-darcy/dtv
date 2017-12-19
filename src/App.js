@@ -42,13 +42,13 @@ class App extends Component {
             <div className="row">
               <div className="columns large-6">
                 <h2 className="hero__heading">All Included DIRECTV Packages</h2>
-                <p>Enjoy TV without the hidden fees. Find the DIRECTV package that’s right for you.</p>
-                <button><a href="#">View packages</a></button>
+                <p className="hero__description">Enjoy TV without the hidden fees. Find the DIRECTV package that’s right for you.</p>
+                <button className="hero__button"><a className="hero__button" href="#">View packages</a></button>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-6 large-offset-6 text-center">
-                <p>Wonder Woman now playing on DIRECTV CINEMA®</p>
+                <p className="hero__movie-subtext">Wonder Woman now playing on DIRECTV CINEMA®</p>
               </div>  
             </div>    
           </section> 
@@ -168,32 +168,32 @@ class App extends Component {
           <section className="bundle">  
             <div className="row">
               <div className="columns large-12">
-                <p className="row">ALL DIRECTV OFFERS REQUIRE 24-MO TV AGREEMENT. EARLY TERMINATION FEE OF $20/MO. FOR EACH MONTH REMAINING ON AGMT., $35 ACTIVATION,  EQUIPMENT NON-RETURN & ADD’L FEES APPLY.  New approved residential customers only (equipment lease req’d). Credit card req’d (except MA & PA).</p>
+                <p className="bundle__24-month-agreement">ALL DIRECTV OFFERS REQUIRE 24-MO TV AGREEMENT. EARLY TERMINATION FEE OF $20/MO. FOR EACH MONTH REMAINING ON AGMT., $35 ACTIVATION,  EQUIPMENT NON-RETURN & ADD’L FEES APPLY.  New approved residential customers only (equipment lease req’d). Credit card req’d (except MA & PA).</p>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-1 large-offset-5 text-center">
-                <a href="#">offer details</a>
+                <a className="bundle__offer-details" href="#">offer details</a>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-10 large-offset-1 text-center">
-                <h3>Add Internet for as little as $30 more per month</h3>
+                <h3 className="bundle__add-internet">Add Internet for as little as $30 more per month</h3>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-12 text-center">   
-                <p>Plus Taxes. For 12 Months W/ 24-mo. TV agmt* $90/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For SELECT All-Included TV Pkg.</p>
+                <p className="bundle__12-month-agreement">Plus Taxes. For 12 Months W/ 24-mo. TV agmt* $90/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For SELECT All-Included TV Pkg.</p>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-1 large-offset-5 text-center">
-                <a href="#">offer details</a>
+                <a className="bundle__offer-details" href="#">offer details</a>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-4 large-offset-4 text-center">
-                <button><a href="#">Shop TV + Internet Bundles</a></button>
+                <button className="bundle__button"><a className="bundle__tv-and-internet"href="#">Shop TV + Internet Bundles</a></button>
               </div>
             </div>                           
           </section>
@@ -201,75 +201,62 @@ class App extends Component {
           <section className="hero-2">
             <div className="row">
               <div className="columns large-5">
-                <h2 className="hero__heading">Bundle DIRECTV with AT&T</h2>
-                <p>Get over 99% reliability on your home high speed Internet AND 99% worry-free signal reliability with DIRECTV.</p>
-                <p>Claim based on U-verse High Speed Internet service. DIRECTV reliability based on a Nationwide Study of representative cities.</p>
+                <h2 className="hero-2__heading">Bundle DIRECTV with AT&T</h2>
+                <p className="hero-2__description">Get over 99% reliability on your home high speed Internet AND 99% worry-free signal reliability with DIRECTV.</p>
+                <p className="hero-2__disclosure">Claim based on U-verse High Speed Internet service. DIRECTV reliability based on a Nationwide Study of representative cities.</p>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-6 large-offset-6 text-center">
-                <p>Top Cat Begins now playing on DIRECTV CINEMA®</p>
+                <p className="hero__movie-subtext">Top Cat Begins now playing on DIRECTV CINEMA®</p>
               </div>  
             </div>    
           </section>
 
-          <section className="search">
+          <section className="offer">
             <div className="row">
               <div className="columns large-12">
-                <p>BUNDLE OFFER REQUIRES 24-MO TV & 12-MO INTERNET AGREEMENTS. ALL OTHER DIRECTV OFFERS REQUIRE 24-MO. AGREEMENT. EARLY TERMINATION FEES ($20/MO. FOR TV; $15/MO. FOR INTERNET) FOR  EACH MONTH REMAINING ON AGMT., $35 ACTIVATION, EQUIPMENT NON-RETURN & ADD’L FEES APPLY.   New approved residential customers only (equipment lease req'd). Credit card req'd (except MA & PA).</p>
+                <p className="offer__requirements">BUNDLE OFFER REQUIRES 24-MO TV & 12-MO INTERNET AGREEMENTS. ALL OTHER DIRECTV OFFERS REQUIRE 24-MO. AGREEMENT. EARLY TERMINATION FEES ($20/MO. FOR TV; $15/MO. FOR INTERNET) FOR  EACH MONTH REMAINING ON AGMT., $35 ACTIVATION, EQUIPMENT NON-RETURN & ADD’L FEES APPLY.   New approved residential customers only (equipment lease req'd). Credit card req'd (except MA & PA).</p>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-1 large-offset-5 text-center">
-                <a href="#">offer details</a>
+                <a className="offer__offer-details" href="#">offer details</a>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-10 large-offset-1 text-center">
-                <h3>See if AT&T Internet is available in your area.</h3>
-                <p>AT&T Internet speeds and offers vary by location. Check to see what’s available near you.</p>
+                <h3 className="offer__heading">See if AT&T Internet is available in your area.</h3>
+                <p className="offer__text">AT&T Internet speeds and offers vary by location. Check to see what’s available near you.</p>
               </div>
             </div>
-            <div className="row">
-              <div className="columns large-8 large-offset-2 text-center">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <input type="text" placeholder="Enter street address"/>
-                <input type="submit" value="Check availability" />
-              </div>
-            </div>          
           </section>
 
           <section className="search">
             <div className="row">
-              <div className="columns large-12">
-                <p>BUNDLE OFFER REQUIRES 24-MO TV & 12-MO INTERNET AGREEMENTS. ALL OTHER DIRECTV OFFERS REQUIRE 24-MO. AGREEMENT. EARLY TERMINATION FEES ($20/MO. FOR TV; $15/MO. FOR INTERNET) FOR  EACH MONTH REMAINING ON AGMT., $35 ACTIVATION, EQUIPMENT NON-RETURN & ADD’L FEES APPLY.   New approved residential customers only (equipment lease req'd). Credit card req'd (except MA & PA).</p>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-1 large-offset-5 text-center">
-                <a href="#">offer details</a>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-10 large-offset-1 text-center">
-                <h3>See if AT&T Internet is available in your area.</h3>
-                <p>AT&T Internet speeds and offers vary by location. Check to see what’s available near you.</p>
+              <div className="columns large-8 large-offset-2 text-center">
+                <i className="search__map-marker" class="fa fa-map-marker" aria-hidden="true"></i>
+                <input className="search__input-text" type="text" placeholder="Enter street address"/>
+                <input className="search__input-button" type="submit" value="Check availability" />
               </div>
-            </div>
+            </div>          
+          </section>
+
+          <section className="price">
             <div className="row">
               <div className="columns large-6 large-offset-3 text-center">
-                <h4>High Speed Internet from AT&T starting at</h4>
+                <h4 className="price__starting-at">High Speed Internet from AT&T starting at</h4>
               </div>
             </div>
             <div className="row">
               <div className="columns large-2 large-offset-5 text-center">
-                <p><sup>$</sup>30<sup>00</sup></p>
+                <p className="price__the-rate"><sup className="price__the-rate--superscript">$</sup>30<sup className="price__the-rate--superscript">00</sup></p>
               </div>
             </div>
             <div className="row">
               <div className="columns large-4 large-offset-4 text-center">
-                <p>Plus taxes. 12 mo agmt, other qualifying service & combined bill req’d.* Incl 1TB data/mo. $10 chrg for each add’l 50GB (up to $100/mo.)†</p>
-                <button><a href="#">Check another address</a></button>
+                <p className="price__taxes">Plus taxes. 12 mo agmt, other qualifying service & combined bill req’d.* Incl 1TB data/mo. $10 chrg for each add’l 50GB (up to $100/mo.)†</p>
+                <button className="price__button"><a className="price__address-check" href="#">Check another address</a></button>
               </div>
             </div>            
           </section>
@@ -277,15 +264,15 @@ class App extends Component {
           <section className="hero-3">
             <div className="row">
               <div className="columns large-5">
-                <h2 className="hero__heading">Customer Service</h2>
-                <p>Our sales agents are standing by to find you the perfect package.</p>
-                <p>Call to order: </p><a href="tel:1-888-444-5555">1-888-444-5555</a>
-                <p>If you are an existing customer and need assistance with your account please call <a href="tel:1-800-495-3913">1-800-495-3913</a>.</p>
+                <h2 className="hero-3__heading">Customer Service</h2>
+                <p className="hero-3__sales-agents">Our sales agents are standing by to find you the perfect package.</p>
+                <p className="hero-3__call-to-action">Call to order: </p><a className="hero-3__phone-number--1" href="tel:1-888-444-5555">1-888-444-5555</a>
+                <p className="hero-3__existing-customer">If you are an existing customer and need assistance with your account please call <a className="hero-3__phone-number--2" href="tel:1-800-495-3913">1-800-495-3913</a>.</p>
               </div>  
             </div>
             <div className="row">
               <div className="columns large-6 large-offset-6 text-center">
-                <p>King Aurthur: Legend of the Sword now playing on DIRECTV CINEMA®</p>
+                <p className="hero-3__movie-subtext">King Aurthur: Legend of the Sword now playing on DIRECTV CINEMA®</p>
               </div>  
             </div>    
           </section>     
@@ -297,17 +284,17 @@ class App extends Component {
             <div className="columns large-8 large-offset-2 end">
               <nav>
                 <ul className="inline-list">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Offer Legal</a></li>
-                  <li><a href="#">ADA Notice</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a className="footer__nav-items" href="#">About Us</a></li>
+                  <li><a className="footer__nav-items" href="#">Offer Legal</a></li>
+                  <li><a className="footer__nav-items" href="#">ADA Notice</a></li>
+                  <li><a className="footer__nav-items" href="#">Terms & Conditions</a></li>
+                  <li><a className="footer__nav-items" href="#">Privacy Policy</a></li>
                 </ul>  
               </nav> 
             </div>
           </div>    
           <div className="row">
-            <div className="columns large-12">
+            <div className="footer__t-and-cs  columns large-12">
               <p>ALL DIRECTV OFFERS REQUIRE 24-MO TV AGREEMENT. EARLY TERMINATION FEE OF $20/MO. FOR EACH MONTH REMAINING ON AGMT., $35 ACTIVATION, EQUIPMENT NON-RETURN & ADD'L FEES APPLY.  New approved residential customers only (equipment lease req'd). Credit card req'd (except MA & PA).</p>
               <p>1-YR ALL INCLUDED PACKAGE PRICE: Ends 9/30/17. Available only in the U.S. (excludes Puerto Rico and U.S.V.I.) Price includes All Included TV Pkg, monthly fees for a Genie HD DVR + three (3) add’l receivers , and standard prof’l installation in up to four rooms. Custom installation extra. After 12 mos. or loss of eligibility, then prevailing rate for TV package applies (currently $90/mo for SELECT All Included; $101/mo for ENTERTAINMENT All Included; $115/mo for CHOICE All Included; $124/mo for XTRA All Included; $131/mo for ULTIMATE All Included; $187/mo for PREMIER All Included ), unless cancelled or changed by customer prior to end of the promotional period. Exclusions: Price does not include taxes, $35 activation & other fees apply, Regional Sports fee of up to $7.29/mo. assessed with CHOICE and/or MÁS ULTRA Pkg and above , applicable use tax expense surcharge on retail value of installation, equipment upgrades/add-ons, and certain other add’l fees & chrgs. Some offers may not be available through all channels and in select areas.</p>
               <p>Geographic and service restrictions apply to AT&T Internet services. Call to see if you qualify.</p>
@@ -346,7 +333,7 @@ class App extends Component {
           </div>
           <div className="row">
             <div className="columns large-4 large-offset-4">
-              <img alt="Direct Star TV logo" src="/img/logo-Directstartv.png"/>
+              <img className="footer__d-star-logo" alt="Direct Star TV logo" src="/img/logo-Directstartv.png"/>
             </div>
           </div>      
         </footer>      
