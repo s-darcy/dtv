@@ -20,20 +20,44 @@
         line-height: 20px;
     }
 
-    &__check {
+    &__bullet-points {
 
+    }
+
+    &__check {
+        height: 37px;
+        width: 37px;
+        background-color: $color-Cerulean;
+        color: $color-White;
+        border-radius: 100%;
+        padding: 3px;
+        font-size: 32px;
+        display: inline-block;
+        // margin-right: 18px;
     }
     
-    &__genie-upgrade {
-        
+    &__genie-upgrade--section {
+        margin-left: 80px;
     }
 
-    &__fees {
-        
-    }
+    &__fees--section,
+    &__installation--section {
+        margin-left: -80px;
+    } 
 
+    &__genie-upgrade, 
+    &__fees,
     &__installation {
-        
+        display: inline-block;
+        font-size: 18px;
+        color: $color-Scorpion-2;
+        margin-bottom: 40px;
+        line-height: 26px;
+        margin-left: -10px;
     }
+
+    // &__fees {
+    //     margin-right: 40px;
+    // }
 
 }//included

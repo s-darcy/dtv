@@ -100,19 +100,37 @@ class App extends Component {
                 <hr />
               </div> 
             </div>  
-            <div className="row">
-              <div className="columns large-3 large-offset-1">
-                <i className="included__check  fa fa-check" aria-hidden="true"></i>
-                <p className="included__genie-upgrade">Genie® HD DVR Upgrade</p>
+            <div className="included__bullet-points  row">
+              <div className="columns large-4">
+                <div className="included__genie-upgrade--section  row">
+                  <div className="columns large-2">
+                    <i className="included__check  fa fa-check" aria-hidden="true"></i>
+                  </div>
+                  <div className="columns large-5 end">
+                    <p className="included__genie-upgrade">Genie® HD DVR Upgrade</p>
+                  </div>
+                </div>
+              </div>    
+              <div className="columns large-4">
+                <div className="included__fees--section  row">
+                  <div className="columns large-2">
+                    <i className="included__check  fa fa-check" aria-hidden="true"></i>
+                  </div>
+                  <div className="columns large-7 end">
+                    <p className="included__fees">Monthly equipment fees for up to 4 TVs</p>
+                  </div>
+                </div>
               </div>
-              <div className="columns large-3 end">
-                <i className="included__check  fa fa-check" aria-hidden="true"></i>
-                <p className="included__fees">Monthly equipment fees for up to 4 TVs</p>
-              </div>
-              <div className="columns large-3 end">
-                <i className="included__check  fa fa-check" aria-hidden="true"></i>
-                <p className="included__isntallation">Standard Professional Installation</p>
-              </div>       
+              <div className="columns large-4 end">
+                <div className="included__installation--section  row">
+                  <div className="columns large-2">
+                    <i className="included__check  fa fa-check" aria-hidden="true"></i>
+                  </div>
+                  <div className="columns large-7 end">
+                    <p className="included__installation">Standard Professional Installation</p>
+                  </div>
+                </div>
+              </div>      
             </div> 
           </section>
 
