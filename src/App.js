@@ -101,32 +101,32 @@ class App extends Component {
               </div> 
             </div>  
             <div className="included__bullet-points  row">
-              <div className="columns large-4">
+              <div className="  columns large-4">
                 <div className="included__genie-upgrade--section  row">
-                  <div className="columns large-2">
+                  <div className="included__border-color-yellow columns large-2">
                     <i className="included__check  fa fa-check" aria-hidden="true"></i>
                   </div>
-                  <div className="columns large-5 end">
+                  <div className="included__border-color-yellow columns large-9 end">
                     <p className="included__genie-upgrade">Genie® HD DVR Upgrade</p>
                   </div>
                 </div>
               </div>    
-              <div className="columns large-4">
+              <div className="  columns large-4">
                 <div className="included__fees--section  row">
-                  <div className="columns large-2">
+                  <div className="included__border-color-green  columns large-2">
                     <i className="included__check  fa fa-check" aria-hidden="true"></i>
                   </div>
-                  <div className="columns large-7 end">
+                  <div className="included__border-color-green columns large-9 end">
                     <p className="included__fees">Monthly equipment fees for up to 4 TVs</p>
                   </div>
                 </div>
               </div>
-              <div className="columns large-4 end">
+              <div className="  columns large-4 end">
                 <div className="included__installation--section  row">
-                  <div className="columns large-2">
+                  <div className="included__border-color-blue  columns large-2">
                     <i className="included__check  fa fa-check" aria-hidden="true"></i>
                   </div>
-                  <div className="columns large-7 end">
+                  <div className="included__border-color-blue  columns large-9 end">
                     <p className="included__installation">Standard Professional Installation</p>
                   </div>
                 </div>
