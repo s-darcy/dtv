@@ -10,6 +10,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -22,6 +23,22 @@
     <title>DTV</title>
   </head>
   <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $( function( $ ) {
+        $( '.js-slider' ).slick({
+          dots: true,  
+          infinite: false,
+          autoplay: true,
+          autoplaySpeed: 8000,
+          slidesToShow: 3,
+          adaptiveHeight: false
+        });
+      });
+    </script> 
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.

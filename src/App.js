@@ -56,32 +56,239 @@ class App extends Component {
           <section className="tv-inlcudes text-center">
             <div className="row">
               <div className="columns large-4">
-                <img alt="TV icon" src="/img/TV-icon.svg" />
-                <p>PREMIUM CHANNELS</p>
-                <p>Includes HBO®, STARZ®, SHOWTIME®, and CINEMAX® for the first 3 months at no extra charge.</p>
-                <p>With SELECT through ULTIMATE Pkgs. After 3 mos., services continue at then prevailing rate  (currently $53.99/mo.) unless you call to change or cancel. Req’s you to select offer.</p>
+                <img className="tv-includes__tv-icon" alt="TV icon" src="/img/TV-icon.svg" />
+                <p className="tv-includes_title">PREMIUM CHANNELS</p>
+                <p className="tv-includes_details">Includes HBO®, STARZ®, SHOWTIME®, and CINEMAX® for the first 3 months at no extra charge.</p>
+                <p className="tv-includes__premium-channels--package">With SELECT through ULTIMATE Pkgs. After 3 mos., services continue at then prevailing rate  (currently $53.99/mo.) unless you call to change or cancel. Req’s you to select offer.</p>
               </div>
               <div className="columns large-4">
-                <img alt="TV and remote icon" src="/img/TV-and-remote.svg"/>
-                <p>NEVER MISS A SHOW</p>
-                <p>Enjoy Genie. Our most advanced DVR ever.</p>
+                <img className="tv-includes__tv-and-remote-icon" alt="TV and remote icon" src="/img/TV-and-remote.svg"/>
+                <p className="tv-includes_title">NEVER MISS A SHOW</p>
+                <p className="tv-includes_details">Enjoy Genie. Our most advanced DVR ever.</p>
               </div> 
               <div className="columns large-4">
-                <img alt="Whole home DVR icon" src="/img/DVR-4.svg" />
-                <p>MONTHLY EQUIPMENT FEES FOR UP TO 4 ROOMS INCLUDED</p>
-                <p>With DIRECTV there’s no equipment to buy.</p>
+                <img className="tv-includes__dvr-icon" alt="Whole home DVR icon" src="/img/DVR-4.svg" />
+                <p className="tv-includes_title">MONTHLY EQUIPMENT FEES FOR UP TO 4 ROOMS INCLUDED</p>
+                <p className="tv-includes_details">With DIRECTV there’s no equipment to buy.</p>
               </div>   
             </div>  
           </section> 
 
-          <section>
+          <section className="shop">
             <div className="row">
               <div className="columns large-12">
-                <h2>Get your entertainment on more devices.</h2>
-                <button><a href="#">Shop bundles</a></button>
+                <h2 className="shop__pitch">Get your entertainment on more devices.</h2>
+                <button className="shop__button"><a className="shop__shop-bundles" href="#">Shop bundles</a></button>
               </div>
             </div>  
           </section>
+
+          <section className="included">
+            <div className="row">
+              <div className="columns large-12 text-center">
+                <h2 className="included__heading">All Included DIRECTV Packages</h2>
+              </div> 
+              <div className="columns large-12 text-center">
+                <h3 className="included__announcement">ALL DIRECTV PACKAGES INCLUDE:</h3>
+              </div>
+            </div>  
+            <div className="row">
+              <div className="columns large-3 large-offset-1">
+                <i className="fa fa-check" aria-hidden="true"></i>
+                <p className="included__genie-upgrade">Genie® HD DVR Upgrade</p>
+              </div>
+              <div className="columns large-3 end">
+                <i className="fa fa-check" aria-hidden="true"></i>
+                <p className="included__fees">Monthly equipment fees for up to 4 TVs</p>
+              </div>
+              <div className="columns large-3 end">
+                <i className="fa fa-check" aria-hidden="true"></i>
+                <p className="included__isntallation">Standard Professional Installation</p>
+              </div>       
+            </div> 
+          </section>
+
+          <section className="cards">
+            <div className="row">
+              <div className="js-slider">
+                <div className="columns large-4">
+                  <div className="row">
+                    <div className="columns large-7 large-offset-1 end">
+                      <h4 className="cards__heading">DIRECTV SELECT™  All Included</h4>
+                    </div>
+                  </div>
+                  <div className="row">  
+                    <div className="columns large-2 large-offset-1">
+                      <p className="cards__price">$50</p>
+                    </div>
+                    <div className="columns large-2 end">
+                      <p className="cards__fees-and-taxes">PER MO. PLUS TAXES  & RSN Fees.</p>
+                    </div>
+                  </div>
+                  <div className="row">  
+                    <div className="columns large-10 large-offset-1 end">
+                      <p className="cards__t-and-cs">For 12 Months W/ 24-mo. TV agmt* $90/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For SELECT All-Included TV Pkg.</p>
+                    </div>      
+                  </div>
+                  <div className="row">  
+                    <div className="columns large-4 large-offset-1">
+                      <p className="cards__150-channels">150+ channels</p>
+                    </div>
+                    <div className="columns large-2 large-offset-2 end">
+                      <a className="cards__view-channels" href="#">view channels</a>
+                    </div>       
+                  </div>
+                  <div className="row">  
+                    <div className="columns large-10 large-offset-1 end">
+                      <ul className="inline-list">  
+                        <li><img className="cards__usa-logo" alt="USA TV Channel logo" src="/img/USA-Network-Logo.svg" /></li>
+                        <li><img className="cards__tbs-logo" alt="TBS TV Channel logo" src="/img/TBS-Logo.svg" /></li>
+                        <li><img className="cards__disney-logo" alt="Disney TV Channel logo" src="/img/Disney-Channel-Logo.svg" /></li>
+                        <li><img className="cards__nick-logo" alt="Nick TV Channel logo" src="/img/Nick-Logo.svg" /></li>
+                      </ul>  
+                    </div>     
+                  </div>
+                  <div className="row">
+                    <div className="columns large-10">
+                      <p className="cards__channels">HBO®, SHOWTIME®, CINEMAX® & STARZ®</p>
+                      <p className="cards__3-months">First 3 months at no extra cost</p>
+                      <p className="cards__ultimate-packages">with SELECT™ through ULTIMATE packages. After 3 mos., services continue at then prevailing rate (currently $53.99/mo.) unless you call to change or cancel. Req’s you to select offer.</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="columns large-8 text-center">
+                      <button className="cards__call-now-button"><a className="cards__call-now"href="#">Call to order now</a></button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </section>
+
+          <section className="bundle">  
+            <div className="row">
+              <div className="columns large-12">
+                <p className="row">ALL DIRECTV OFFERS REQUIRE 24-MO TV AGREEMENT. EARLY TERMINATION FEE OF $20/MO. FOR EACH MONTH REMAINING ON AGMT., $35 ACTIVATION,  EQUIPMENT NON-RETURN & ADD’L FEES APPLY.  New approved residential customers only (equipment lease req’d). Credit card req’d (except MA & PA).</p>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-1 large-offset-5 text-center">
+                <a href="#">offer details</a>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-10 large-offset-1 text-center">
+                <h3>Add Internet for as little as $30 more per month</h3>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-12 text-center">   
+                <p>Plus Taxes. For 12 Months W/ 24-mo. TV agmt* $90/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For SELECT All-Included TV Pkg.</p>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-1 large-offset-5 text-center">
+                <a href="#">offer details</a>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-4 large-offset-4 text-center">
+                <button><a href="#">Shop TV + Internet Bundles</a></button>
+              </div>
+            </div>                           
+          </section>
+
+          <section className="hero-2">
+            <div className="row">
+              <div className="columns large-5">
+                <h2 className="hero__heading">Bundle DIRECTV with AT&T</h2>
+                <p>Get over 99% reliability on your home high speed Internet AND 99% worry-free signal reliability with DIRECTV.</p>
+                <p>Claim based on U-verse High Speed Internet service. DIRECTV reliability based on a Nationwide Study of representative cities.</p>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-6 large-offset-6 text-center">
+                <p>Top Cat Begins now playing on DIRECTV CINEMA®</p>
+              </div>  
+            </div>    
+          </section>
+
+          <section className="search">
+            <div className="row">
+              <div className="columns large-12">
+                <p>BUNDLE OFFER REQUIRES 24-MO TV & 12-MO INTERNET AGREEMENTS. ALL OTHER DIRECTV OFFERS REQUIRE 24-MO. AGREEMENT. EARLY TERMINATION FEES ($20/MO. FOR TV; $15/MO. FOR INTERNET) FOR  EACH MONTH REMAINING ON AGMT., $35 ACTIVATION, EQUIPMENT NON-RETURN & ADD’L FEES APPLY.   New approved residential customers only (equipment lease req'd). Credit card req'd (except MA & PA).</p>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-1 large-offset-5 text-center">
+                <a href="#">offer details</a>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-10 large-offset-1 text-center">
+                <h3>See if AT&T Internet is available in your area.</h3>
+                <p>AT&T Internet speeds and offers vary by location. Check to see what’s available near you.</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="columns large-8 large-offset-2 text-center">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <input type="text" placeholder="Enter street address"/>
+                <input type="submit" value="Check availability" />
+              </div>
+            </div>          
+          </section>
+
+          <section className="search">
+            <div className="row">
+              <div className="columns large-12">
+                <p>BUNDLE OFFER REQUIRES 24-MO TV & 12-MO INTERNET AGREEMENTS. ALL OTHER DIRECTV OFFERS REQUIRE 24-MO. AGREEMENT. EARLY TERMINATION FEES ($20/MO. FOR TV; $15/MO. FOR INTERNET) FOR  EACH MONTH REMAINING ON AGMT., $35 ACTIVATION, EQUIPMENT NON-RETURN & ADD’L FEES APPLY.   New approved residential customers only (equipment lease req'd). Credit card req'd (except MA & PA).</p>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-1 large-offset-5 text-center">
+                <a href="#">offer details</a>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-10 large-offset-1 text-center">
+                <h3>See if AT&T Internet is available in your area.</h3>
+                <p>AT&T Internet speeds and offers vary by location. Check to see what’s available near you.</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="columns large-6 large-offset-3 text-center">
+                <h4>High Speed Internet from AT&T starting at</h4>
+              </div>
+            </div>
+            <div className="row">
+              <div className="columns large-2 large-offset-5 text-center">
+                <p><sup>$</sup>30<sup>00</sup></p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="columns large-4 large-offset-4 text-center">
+                <p>Plus taxes. 12 mo agmt, other qualifying service & combined bill req’d.* Incl 1TB data/mo. $10 chrg for each add’l 50GB (up to $100/mo.)†</p>
+                <button><a href="#">Check another address</a></button>
+              </div>
+            </div>            
+          </section>
+
+          <section className="hero-3">
+            <div className="row">
+              <div className="columns large-5">
+                <h2 className="hero__heading">Customer Service</h2>
+                <p>Our sales agents are standing by to find you the perfect package.</p>
+                <p>Call to order: </p><a href="tel:1-888-444-5555">1-888-444-5555</a>
+                <p>If you are an existing customer and need assistance with your account please call <a href="tel:1-800-495-3913">1-800-495-3913</a>.</p>
+              </div>  
+            </div>
+            <div className="row">
+              <div className="columns large-6 large-offset-6 text-center">
+                <p>King Aurthur: Legend of the Sword now playing on DIRECTV CINEMA®</p>
+              </div>  
+            </div>    
+          </section>     
 
         </main>
 
