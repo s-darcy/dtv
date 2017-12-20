@@ -284,8 +284,12 @@ class App extends Component {
               </div>
             </div>
             <div className="row">
-              <div className="columns large-4 large-offset-4 text-center">
+              <div className="columns large-4 large-offset-4">
                 <p className="price__taxes">Plus taxes. 12 mo agmt, other qualifying service & combined bill req’d.* Incl 1TB data/mo. $10 chrg for each add’l 50GB (up to $100/mo.)†</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="columns large-4 large-offset-4 text-center"> 
                 <button className="price__button"><a className="price__address-check" href="#">Check another address</a></button>
               </div>
             </div>            
@@ -301,7 +305,7 @@ class App extends Component {
               </div>  
             </div>
             <div className="row">
-              <div className="columns large-6 large-offset-6 text-center">
+              <div className="columns large-7 large-offset-5 text-center">
                 <p className="hero-3__movie-subtext">King Aurthur: Legend of the Sword now playing on DIRECTV CINEMA®</p>
               </div>  
             </div>    
@@ -311,9 +315,9 @@ class App extends Component {
 
         <footer className="footer">
           <div className="row">
-            <div className="columns large-8 large-offset-2 end">
+            <div className="columns large-8 large-offset-2 end text-center">
               <nav>
-                <ul className="inline-list">
+                <ul className="inline-list text-center">
                   <li><a className="footer__nav-items" href="#">About Us</a></li>
                   <li><a className="footer__nav-items" href="#">Offer Legal</a></li>
                   <li><a className="footer__nav-items" href="#">ADA Notice</a></li>

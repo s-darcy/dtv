@@ -8,7 +8,14 @@
     }
 
     &__nav-items {
-
+        color: $color-Cerulean;
+        font-size: 12px;
+        font-family: 'OpenSans-Regular';
+        line-height: 20px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        text-decoration: underline;
     }
 
     &__t-and-cs {
