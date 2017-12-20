@@ -1,27 +1,53 @@
 .bundle {
 
+    margin-top: 32px;
+
     &__24-month-agreement {
-        
+        font-size: 11px;
+        color: $color-Scorpion;
+        font-family: 'OpenSans-Light';
+        line-height: 12px;
+        margin-bottom: 0px;
     }
 
-    &__offer-details {
-        
+    &__offer-details,
+    &__offer-details-2 {
+        font-family: 'OpenSans-Light';
+        text-decoration: underline;
+        font-size: 10px;
+        color: $color-Scorpion-3;
+        line-height: 14px;
+        margin-bottom: 50px;
+        float: left;
+        width: 28px;
+    }
+
+    &__offer-details-2 {
+        margin-left: -30px;
+        float: left;
     }
 
     &__add-internet {
-        
+        font-size: 36px;
+        color: $color-Black;
+        font-family: 'OpenSans-Light';
+        line-height: 44px;
+        margin-bottom: 20px;
     }
 
     &__12-month-agreement {
-        
+        font-size: 11px;
+        color: $color-Scorpion;
+        font-family: 'OpenSans-Light';
+        line-height: 12px;
+        margin-bottom: 30px;      
     }
 
     &__button {
-        
-    }
-
-    &__tv-and-internet {
-        
+        width: 320px;
+        height: 50px;
+        background-color: $color-Lochmara;
+        margin-bottom: 70px;
     }
 
 }//bundle

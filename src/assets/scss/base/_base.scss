@@ -23,6 +23,11 @@
     src: url('/assets/fonts/open-sans/OpenSans-Italic.ttf') format('ttf');
 }
 
+@font-face {
+    font-family: 'Nexa';
+    src: url('/src/assets/fonts/nexa/nexa-webfont.ttf') format('ttf');
+}
+
 html, body {
     font-family: 'OpenSans-Regular';
     font-size: 18px; 

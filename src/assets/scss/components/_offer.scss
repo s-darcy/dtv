@@ -1,19 +1,39 @@
 .offer {
 
     &__requirements {
-
+        font-size: 11px;
+        color: $color-Scorpion;
+        font-family: 'OpenSans-Light';
+        line-height: 12px;
+        margin-bottom: 0px;
     }
 
     &__offer-details {
-        
+        font-family: 'OpenSans-Light';
+        text-decoration: underline;
+        font-size: 10px;
+        color: $color-Scorpion-3;
+        line-height: 14px;
+        margin-bottom: 36px;
+        float: left;
+        width: 28px;
     }
 
     &__heading {
-        
+        font-size: 36px;
+        color: $color-Black;
+        font-family: 'OpenSans-Light';
+        line-height: 44px;
+        margin-bottom: 20px;
     }
 
     &__text {
-        
+        font-size: 18px;
+        color: $color-Scorpion;
+        font-family: 'OpenSans-Light';
+        line-height: 26px;
+        margin-bottom: 30px; 
     }
 
-}
+}//offer
+

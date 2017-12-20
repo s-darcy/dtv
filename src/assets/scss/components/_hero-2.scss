@@ -1,19 +1,45 @@
 .hero-2 {
 
-    &__heading {
+    background-image: url( '/img/cat-background.jpg' );
+    background-size: 1221px;
+    background-color: $color-Black;    
+    background-repeat: no-repeat;
+    background-position: center right;
+    color: $color-White;
+    height: 390px;
+    margin-bottom: 83px;
 
+    &__heading {
+        color: $color-White;
+        margin-top: 72px;
+        margin-bottom: 20px;
+        font-family: 'OpenSans-Light';
+        font-size: 45px;
+        line-height: 45px;
+        width: 380px;
     }
 
     &__description {
-        
+        font-family: 'OpenSans-Regular';
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
     }
 
     &__disclosure {
-        
+        font-family: 'OpenSans-Light';
+        font-size: 11px;
+        line-height: 12px;
+        margin-bottom: 85px;
     }
 
     &__movie-subtext {
-        
+        margin-top: -10px; 
+        font-size: 11px;
+        line-height: 15px;
+        font-family: 'OpenSans-Regular';
+        color: $color-White;
+        margin-bottom: 24px;
     }
 
 }//hero-2

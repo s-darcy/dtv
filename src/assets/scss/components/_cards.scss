@@ -1,3 +1,9 @@
+.js-slider .card {
+    background-color: $color-Concrete;
+    border: 1px solid $color-Gray;
+    width: 345px;
+}
+
 .cards {
 
     &__heading {
@@ -14,6 +20,7 @@
         color: $color-Woodsmoke;
         line-height: 43px;
         font-family: 'OpenSans-Regular';
+        margin-bottom: 6px;
     }
 
     &__fees-and-taxes {
@@ -22,50 +29,74 @@
         line-height: 8px;
         font-family: 'OpenSans-Regular';
         margin-top: 8px;
+        width: 35px;
+        margin-left: -10px;
+        margin-bottom: 10px;
     }
 
     &__t-and-cs {
-        
+        font-family: Nexa;
+        font-size: 8px;
+        margin-bottom: 7px;
+        line-height: 9px;
+        color: $color-Tundora;
     }
 
     &__150-channels {
-        
+        font-family: 'OpenSans-Regular';
+        font-size: 22px;
+        margin-bottom: 0px;
+        line-height: 25px;
+        color: $color-Emperor;
     }
 
     &__view-channels {
-        
+        text-decoration: underline;
+        font-size: 10px;
+        color: $color-Allports;
+        line-height: 14px;
+        font-family: 'OpenSans-Regular';
+        margin-left: 3px;
+        margin-bottom: 4px;
     }
 
-    &__usa-logo {
-
-    }
-
-    &__tbs-logo {
-        
-    }
-
-    &__disney-logo {
-        
-    }
-
+    &__usa-logo,
+    &__tbs-logo,
+    &__disney-logo,
     &__nick-logo {
-        
+        margin-bottom: 17px;      
     }
 
     &__channels {
-        
+        font-size: 12px;
+        font-family: 'OpenSans-Bold';
+        color: $color-Emperor;
+        margin-bottom: 0px; 
+        line-height: 12px;
     }
 
     &__3-months{
-        
+        font-family: 'OpenSans-Bold';
+        font-size: 12px;
+        color: $color-Emperor;
+        line-height: 12px;
+        margin-bottom: 3px;
     }
 
     &__ultimate-packages {
-        
+        font-size: 10px;
+        font-family: 'OpenSans-Regular';
+        color: $color-Tundora;
+        margin-bottom: 21px; 
+        line-height: 12px;
     }
 
     &__call-now-button{
-        
+        margin: 0 auto;
+        width: 180px;
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-bottom: 50px;
     }
 
 }//cards
