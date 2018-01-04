@@ -4,10 +4,12 @@
     background-size: 1221px;
     background-color: $color-Black;    
     background-repeat: no-repeat;
-    background-position: center right;
+    // background-position: center right;
+    background-position: calc(100%) calc(100%);
     color: $color-White;
     height: 390px;
     margin-bottom: 83px;
+    position: relative;
 
     &__heading {
         color: $color-White;
@@ -51,6 +53,10 @@
         margin-bottom: 33px;
     }
 
+    &__movie-subtext--parent {
+        
+    }
+
     &__movie-subtext {
         margin-top: 20px; 
         font-size: 11px;
@@ -58,6 +64,8 @@
         font-family: 'OpenSans-Regular';
         color: $color-White;
         margin-bottom: 24px;
+        // margin-right: 153px;
+        width: calc(100% + 153px) calc(100% - 153px);
     }
 
 }//hero-3

@@ -4,29 +4,170 @@ import logo from './logo.svg';
 
 import './assets/css/styles.css';
 import './assets/js/project.js';
+
+import Home from './Home';
+import HomeTV from './HomeTV';
+import Packages from './Packages';
+import PlansAddInternet from './PlansAddInternet';
+import Bundles from './Bundles';
+import BundlesAvailability from './BundlesAvailability';
+import AvailabilityCheck from './AvailabilityCheck';
+import AvailabilityCheckResult from './AvailabilityCheckResult';
+import CustomerService from './CustomerService';
+import Pricing from './Pricing';
 class App extends Component {
 
   constructor() {
     super();
     this.state = {
 
-    }; 
-  }  
+      home: true,
+      homeTV: true,
+      packages: false,
+      plansAddInternet: false,
+      bundles: false,
+      bundlesAvailability: false,
+      availabilityCheck: false,
+      availabilityCheckResult: false,
+      customerService: false,
+      pricing: false
+
+    };
+    
+    //Constructor Binding State
+    this.homeClick = this.homeClick.bind(this);
+    this.bundlesClick = this.bundlesClick.bind(this);
+    this.packagesClick = this.packagesClick.bind(this);
+    this.customerServiceClick = this.customerServiceClick.bind(this);
+    this.availabilityClick = this.availabilityClick.bind(this);
+    this.availabilitySecondAddressClick = this.availabilityClick.bind(this);
+   
+    // this.fetchData();
+
+  }
+
+  homeClick = (event) => {
+    event.preventDefault();
+      this.setState({
+        home: true,
+        homeTV: true,
+        packages: false,
+        plansAddInternet: false,
+        bundles: false,
+        bundlesAvailability: false,
+        availabilityCheck: false,
+        availabilityCheckResult: false,
+        customerService: false,
+        pricing: false
+      });
+  };
+
+  packagesClick = (event) => {
+    event.preventDefault();
+      this.setState({
+        home: false,
+        homeTV: false,
+        packages: true,
+        plansAddInternet: true,
+        bundles: false,
+        bundlesAvailability: false,
+        availabilityCheck: false,
+        availabilityCheckResult: false,
+        customerService: false,
+        pricing: true
+      });
+  };
+
+  bundlesClick = (event) => {
+    event.preventDefault();
+      this.setState({
+        home: false,
+        homeTV: false,
+        packages: false,
+        plansAddInternet: false,
+        bundles: true,
+        bundlesAvailability: true,
+        availabilityCheck: true,
+        availabilityCheckResult: false,
+        customerService: false,
+        pricing: true 
+      });
+  };
+  
+  customerServiceClick = (event) => {
+    event.preventDefault();
+      this.setState({
+        home: false,
+        homeTV: false,
+        packages: false,
+        plansAddInternet : false,
+        bundles: false,
+        bundlesAvailability: false,
+        availabilityCheck: false,
+        availabilityCheckResult: false,
+        customerService: true,
+        pricing: true
+      });
+  };
+
+  availabilityClick = (event) => {
+    event.preventDefault();
+      this.setState({
+        availabilityCheck: false,
+        availabilityCheckResult: true
+      });
+  };
+
+  availabilitySecondAddressClick = (event) => {
+    event.preventDefault();
+      this.setState({
+        availabilityCheck: true,
+        availabilityCheckResult: false
+      });
+  };
 
   render() {
+
+    let home = <Home 
+      packages={this.state.packages}
+      plansAddInternet={this.state.plansAddInternet}
+      packagesClick={this.packagesClick}
+    />
+    let homeTV = <HomeTV 
+      bundles={this.state.bundles}
+      bundlesAvailability={this.state.bundlesAvailability}
+      bundlesClick={this.bundlesClick}
+    />
+    let packages = <Packages />
+    let bundles = <Bundles />
+    let customerService = <CustomerService />
+    let pricing = <Pricing />
+    let plansAddInternet = <PlansAddInternet />
+    let bundlesAvailability = <BundlesAvailability 
+      availabilityClick={this.availabilityClick}
+      availabilitySecondAddressClick={this.availabilitySecondAddressClick}
+      availabilityCheckStatus={this.state.availabilityCheck}
+      availabilityCheckResultStatus={this.state.availabilityCheckResult}
+    />
+    
+
     return (
+
+
       <div className="App">
         <header className="header">
           <nav>
             <div className="row top-nav">
               <div className="columns large-2">
-                <img className="header__direct-tv-logo" alt="DirecTV Authorized Retailer Logo" src="/img/logo-directv.png" />
+                <a href="#" onClick={(event) => {this.homeClick(event)}}>
+                  <img className="header__direct-tv-logo" alt="DirecTV Authorized Retailer Logo" src="/img/logo-directv.png" />
+                </a>
               </div>
               <div className="columns large-5">  
                 <ul className="inline-list">
-                  <li><a className="header__nav-items" href="#">Shop packages</a></li>
-                  <li><a className="header__nav-items" href="#">Shop bundle</a></li>
-                  <li><a className="header__nav-items" href="#">Customer service</a></li>
+                  <li><a className="header__nav-items" href="#" onClick={(event) => {this.packagesClick(event)}}>Shop packages</a></li>
+                  <li><a className="header__nav-items" href="#" onClick={(event) => {this.bundlesClick(event)}}>Shop bundle</a></li>
+                  <li><a className="header__nav-items" href="#" onClick={(event) => {this.customerServiceClick(event)}}>Customer service</a></li>
                 </ul>  
               </div>
               <div className="header__phone-section  columns large-4 large-offset-1">
@@ -38,286 +179,22 @@ class App extends Component {
         </header>
         <main>
           
-          <section className="hero">
-            <div className="row">
-              <div className="columns large-6">
-                <h2 className="hero__heading">All Included DIRECTV Packages</h2>
-                <p className="hero__description">Enjoy TV without the hidden fees. Find the DIRECTV package that’s right for you.</p>
-                <button className="hero__button"><a className="hero__button--text" href="#">View packages</a></button>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-6 large-offset-6 text-center">
-                <p className="hero__movie-subtext">Wonder Woman now playing on DIRECTV CINEMA®</p>
-              </div>  
-            </div>    
-          </section> 
-
-          <section className="tv-includes  text-center">
-            <div className="row">
-              <div className="columns large-4">
-                <img className="tv-includes__tv-icon" alt="TV icon" src="/img/TV-icon.svg" />
-                <p className="tv-includes__title">PREMIUM CHANNELS</p>
-                <p className="tv-includes__details">Includes HBO®, STARZ®, SHOWTIME®, and CINEMAX® for the first 3 months at no extra charge.</p>
-                <p className="tv-includes__premium-channels--package">With SELECT through ULTIMATE Pkgs. After 3 mos., services continue at then prevailing rate  (currently $53.99/mo.) unless you call to change or cancel. Req’s you to select offer.</p>
-              </div>
-              <div className="columns large-4">
-                <img className="tv-includes__tv-and-remote-icon" alt="TV and remote icon" src="/img/TV-and-remote.svg"/>
-                <p className="tv-includes__title">NEVER MISS A SHOW</p>
-                <p className="tv-includes__details">Enjoy Genie. Our most advanced DVR ever.</p>
-              </div> 
-              <div className="columns large-4">
-                <img className="tv-includes__dvr-icon" alt="Whole home DVR icon" src="/img/DVR-4.svg" />
-                <p className="tv-includes__title">MONTHLY EQUIPMENT FEES FOR UP TO 4 ROOMS INCLUDED</p>
-                <p className="tv-includes__details">With DIRECTV there’s no equipment to buy.</p>
-              </div>   
-            </div>  
-          </section> 
-
-          <section className="shop">
-            <div className="row">
-              <div className="columns large-9">
-                <h2 className="shop__pitch">Get your entertainment on more devices.</h2>
-              </div>
-              <div className="columns large-3">
-                <button className="shop__button"><a className="shop__shop-bundles" href="#">Shop bundles</a></button>
-              </div>
-            </div>  
-          </section>
-
-          <section className="included">
-            <div className="row">
-              <div className="columns large-12 text-center">
-                <h2 className="included__heading">All Included DIRECTV Packages</h2>
-              </div> 
-              <div className="columns large-4 text-center">
-                <hr />
-              </div> 
-              <div className="columns large-4 text-center"> 
-                <h3 className="included__announcement">ALL DIRECTV PACKAGES INCLUDE:</h3>
-              </div>
-              <div className="columns large-4 text-center">
-                <hr />
-              </div> 
-            </div>  
-            <div className="included__bullet-points  row">
-              <div className="  columns large-4">
-                <div className="included__genie-upgrade--section  row">
-                  <div className="included__border-color-yellow columns large-2">
-                    <i className="included__check  fa fa-check" aria-hidden="true"></i>
-                  </div>
-                  <div className="included__border-color-yellow columns large-9 end">
-                    <p className="included__genie-upgrade">Genie® HD DVR Upgrade</p>
-                  </div>
-                </div>
-              </div>    
-              <div className="  columns large-4">
-                <div className="included__fees--section  row">
-                  <div className="included__border-color-green  columns large-2">
-                    <i className="included__check  fa fa-check" aria-hidden="true"></i>
-                  </div>
-                  <div className="included__border-color-green columns large-9 end">
-                    <p className="included__fees">Monthly equipment fees for up to 4 TVs</p>
-                  </div>
-                </div>
-              </div>
-              <div className="  columns large-4 end">
-                <div className="included__installation--section  row">
-                  <div className="included__border-color-blue  columns large-2">
-                    <i className="included__check  fa fa-check" aria-hidden="true"></i>
-                  </div>
-                  <div className="included__border-color-blue  columns large-9 end">
-                    <p className="included__installation">Standard Professional Installation</p>
-                  </div>
-                </div>
-              </div>      
-            </div> 
-          </section>
-
-          <section className="cards">
-            <div className="row">
-              <div className="js-slider">
-                <div className="cards_yellow-top">
-                </div>  
-                <div className="cards__green-top">
-                </div>
-                <div className="cards__blue-top">
-                </div> 
-                <div className="card  columns large-4">
-                  <div className="row">
-                    <div className="columns large-7 large-offset-1 end">
-                      <h4 className="cards__heading">DIRECTV SELECT™  All Included</h4>
-                    </div>
-                  </div>
-                  <div className="row">  
-                    <div className="columns large-2 large-offset-1">
-                      <p className="cards__price">$50</p>
-                    </div>
-                    <div className="columns large-2 end">
-                      <p className="cards__fees-and-taxes">PER MO. PLUS TAXES  & RSN Fees.</p>
-                    </div>
-                  </div>
-                  <div className="row">  
-                    <div className="columns large-10 large-offset-1 end">
-                      <p className="cards__t-and-cs">For 12 Months W/ 24-mo. TV agmt* $90/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For SELECT All-Included TV Pkg.</p>
-                    </div>      
-                  </div>
-                  <div className="row">  
-                    <div className="columns large-4 large-offset-1">
-                      <p className="cards__150-channels">150+ channels</p>
-                    </div>
-                    <div className="columns large-3 large-offset-2 end">
-                      <a className="cards__view-channels" href="#">view channels</a>
-                    </div>       
-                  </div>
-                  <div className="row">  
-                    <div className="columns large-10 large-offset-1 end">
-                      <ul className="inline-list">  
-                        <li><img className="cards__usa-logo" alt="USA TV Channel logo" src="/img/USA-Network-Logo.svg" /></li>
-                        <li><img className="cards__tbs-logo" alt="TBS TV Channel logo" src="/img/TBS-Logo.svg" /></li>
-                        <li><img className="cards__disney-logo" alt="Disney TV Channel logo" src="/img/Disney-Channel-Logo.svg" /></li>
-                        <li><img className="cards__nick-logo" alt="Nick TV Channel logo" src="/img/Nick-Logo.svg" /></li>
-                      </ul>  
-                    </div>     
-                  </div>
-                  <div className="row">
-                    <div className="columns large-offset-1 large-10">
-                      <p className="cards__channels">HBO®, SHOWTIME®, CINEMAX® & STARZ®</p>
-                      <p className="cards__3-months">First 3 months at no extra cost</p>
-                      <p className="cards__ultimate-packages">with SELECT™ through ULTIMATE packages. After 3 mos., services continue at then prevailing rate (currently $53.99/mo.) unless you call to change or cancel. Req’s you to select offer.</p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="columns large-8 text-center">
-                      <button className="cards__call-now-button"><a className="cards__call-now"href="#">Call to order now</a></button>
-                    </div>
-                  </div>
-                </div>  
-              </div>
-            </div>
-          </section>
-
-          <section className="bundle">  
-            <div className="row">
-              <div className="columns large-12">
-                <p className="bundle__24-month-agreement">ALL DIRECTV OFFERS REQUIRE 24-MO TV AGREEMENT. EARLY TERMINATION FEE OF $20/MO. FOR EACH MONTH REMAINING ON AGMT., $35 ACTIVATION,  EQUIPMENT NON-RETURN & ADD’L FEES APPLY.  New approved residential customers only (equipment lease req’d). Credit card req’d (except MA & PA).</p>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-1 large-offset-5 text-center">
-                <a className="bundle__offer-details" href="#">offer details</a>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-10 large-offset-1 text-center">
-                <h3 className="bundle__add-internet">Add Internet for as little as $30 more per month</h3>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-11 text-center">   
-                <p className="bundle__12-month-agreement">Plus Taxes. For 12 Months W/ 24-mo. TV agmt* $90/mo. in months 13-24 (subject to change). Regional sports fee up to $7.29/mo. is extra & applies in certain markets. For SELECT All-Included TV Pkg.</p>
-              </div>  
-              <div className="columns large-1  text-center">
-                <a className="bundle__offer-details-2" href="#">offer details</a>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-4 large-offset-4 text-center">
-                <button className="bundle__button"><a className="bundle__tv-and-internet"href="#">Shop TV + Internet Bundles</a></button>
-              </div>
-            </div>                           
-          </section>
-
-          <section className="hero-2">
-            <div className="row">
-              <div className="columns large-5">
-                <h2 className="hero-2__heading">Bundle DIRECTV with AT&T</h2>
-                <p className="hero-2__description">Get over 99% reliability on your home high speed Internet AND 99% worry-free signal reliability with DIRECTV.</p>
-                <p className="hero-2__disclosure">Claim based on U-verse High Speed Internet service. DIRECTV reliability based on a Nationwide Study of representative cities.</p>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-6 large-offset-6 text-center">
-                <p className="hero-2__movie-subtext">Top Cat Begins now playing on DIRECTV CINEMA®</p>
-              </div>  
-            </div>    
-          </section>
-
-          <section className="offer">
-            <div className="row">
-              <div className="columns large-12">
-                <p className="offer__requirements">BUNDLE OFFER REQUIRES 24-MO TV & 12-MO INTERNET AGREEMENTS. ALL OTHER DIRECTV OFFERS REQUIRE 24-MO. AGREEMENT. EARLY TERMINATION FEES ($20/MO. FOR TV; $15/MO. FOR INTERNET) FOR  EACH MONTH REMAINING ON AGMT., $35 ACTIVATION, EQUIPMENT NON-RETURN & ADD’L FEES APPLY.   New approved residential customers only (equipment lease req'd). Credit card req'd (except MA & PA).</p>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-1 large-offset-5 text-center">
-                <a className="offer__offer-details" href="#">offer details</a>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-10 large-offset-1 text-center">
-                <h3 className="offer__heading">See if AT&T Internet is available in your area.</h3>
-                <p className="offer__text">AT&T Internet speeds and offers vary by location. Check to see what’s available near you.</p>
-              </div>
-            </div>
-          </section>
-
-          <section className="search">
-            <div className="row">
-              <div className="columns large-8 large-offset-2 text-center">
-                <i className="search__map-marker  fa fa-map-marker" aria-hidden="true"></i>
-                <input className="search__input-text" type="text" placeholder="Enter street address"/>
-                <input className="search__input-button" type="submit" value="Check availability" />
-              </div>
-            </div>          
-          </section>
-
-          <section className="price">
-            <div className="row">
-              <div className="columns large-6 large-offset-3 text-center">
-                <h4 className="price__starting-at">High Speed Internet from AT&T starting at</h4>
-              </div>
-            </div>
-            <div className="row">
-              <div className="columns large-2 large-offset-5 text-center">
-                <p className="price__the-rate"><sup className="price__the-rate--superscript">$</sup>30<sup className="price__the-rate--superscript">00</sup></p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="columns large-4 large-offset-4">
-                <p className="price__taxes">Plus taxes. 12 mo agmt, other qualifying service & combined bill req’d.* Incl 1TB data/mo. $10 chrg for each add’l 50GB (up to $100/mo.)†</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="columns large-4 large-offset-4 text-center"> 
-                <button className="price__button"><a className="price__address-check" href="#">Check another address</a></button>
-              </div>
-            </div>            
-          </section>
-
-          <section className="hero-3">
-            <div className="row">
-              <div className="columns large-5">
-                <h2 className="hero-3__heading">Customer Service</h2>
-                <p className="hero-3__sales-agents">Our sales agents are standing by to find you the perfect package.</p>
-                <p className="hero-3__call-to-action">Call to order: </p><a className="hero-3__phone-number--1" href="tel:1-888-444-5555">1-888-444-5555</a>
-                <p className="hero-3__existing-customer">If you are an existing customer and need assistance with your account please call <a className="hero-3__phone-number--2" href="tel:1-800-495-3913">1-800-495-3913</a>.</p>
-              </div>  
-            </div>
-            <div className="row">
-              <div className="columns large-7 large-offset-5 text-center">
-                <p className="hero-3__movie-subtext">King Aurthur: Legend of the Sword now playing on DIRECTV CINEMA®</p>
-              </div>  
-            </div>    
-          </section>     
+            {this.state.home && home}
+            {this.state.homeTV && homeTV}
+            {this.state.packages && packages}
+            {this.state.bundles && bundles}
+            {this.state.customerService && customerService}
+            {this.state.pricing && pricing}
+            {this.state.plansAddInternet && plansAddInternet}
+            {this.state.bundlesAvailability && bundlesAvailability}  
 
         </main>
 
         <footer className="footer">
           <div className="row">
-            <div className="columns large-8 large-offset-2 end text-center">
+            <div className="columns large-8 large-offset-2 end">
               <nav>
-                <ul className="inline-list text-center">
+                <ul className="footer__nav  inline-list text-center">
                   <li><a className="footer__nav-items" href="#">About Us</a></li>
                   <li><a className="footer__nav-items" href="#">Offer Legal</a></li>
                   <li><a className="footer__nav-items" href="#">ADA Notice</a></li>
@@ -367,7 +244,7 @@ class App extends Component {
           </div>
           <div className="row">
             <div className="columns large-4 large-offset-4">
-              <img className="footer__d-star-logo" alt="Direct Star TV logo" src="/img/logo-Directstartv.png"/>
+              <a href="#"><img className="footer__d-star-logo" alt="Direct Star TV logo" src="/img/logo-Directstartv.png"/></a>
             </div>
           </div>      
         </footer>      

@@ -7,23 +7,34 @@
         font-size: 10px;
     }
 
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__nav-items {
         color: $color-Cerulean;
         font-size: 12px;
         font-family: 'OpenSans-Regular';
         line-height: 20px;
-        display: flex;
-        justify-content: space-around;
         margin-top: 30px;
+        margin-bottom: 40px;
         text-decoration: underline;
     }
 
-    &__t-and-cs {
-        
+    &__t-and-cs p {
+        color: $color-White;
+        font-size: 10px;
+        font-family: 'OpenSans-Regular';
+        line-height: 12px;
+        margin-bottom: 12px;
     }
 
     &__d-star-logo {
-        
+        margin-top: 12px;
+        margin-bottom: 40px;
+        width: 220px;
+        height: 31px;
     }
 
 }//footer
